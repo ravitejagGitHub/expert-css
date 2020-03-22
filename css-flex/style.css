@@ -27,18 +27,11 @@
     text-align : center;
     text-shadow : 4px 4px 0 rgba(0,0,0,0.1);
     padding: 10px;
+    flex-basis: 120px;
+
   }
-  /* .box3{
-    font-size: 30px;
+   .box2{
+    flex-basis: 300px;
   }
 
-  .box6{
-    font-size: 130px;
-  }
-
-  .box4{
-    font-size: 100px;
-  }
-  .box5{
-    font-size: 5px;
-  } */
+  
