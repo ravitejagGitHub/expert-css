@@ -17,8 +17,8 @@
     min-height:100vh;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end ;
+    justify-content: flex-start;
+    align-content: center;
   }
   
   .box{
@@ -27,7 +27,6 @@
     text-align : center;
     text-shadow : 4px 4px 0 rgba(0,0,0,0.1);
     padding: 10px;
-    width: 30.39vw;
   }
   /* .box3{
     font-size: 30px;
