@@ -27,11 +27,13 @@
     text-align : center;
     text-shadow : 4px 4px 0 rgba(0,0,0,0.1);
     padding: 10px;
-    flex-basis: 120px;
+  }
 
+  .box1{
+    flex-grow: 1;
   }
    .box2{
-    flex-basis: 300px;
+    flex-basis: 250px;
   }
 
   
