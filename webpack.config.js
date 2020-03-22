@@ -4,11 +4,12 @@ const path = require("path");
 
 const isDevelopment = true;
 const folder = "single-line-form";
+//const folder = "navigation";
 const template = `./src/${folder}/index.html`;
 
 module.exports = {
   watch: true,
-  entry: [`./src/${folder}`],
+  entry: { app: `./src/${folder}` },
   module: {
     rules: [
       {
