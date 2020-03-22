@@ -9,7 +9,10 @@ const template = `./src/${folder}/index.html`;
 
 module.exports = {
   watch: true,
-  entry: { app: `./src/${folder}` },
+  entry: [
+    //`./src`,//-- all files
+    `./src/${folder}`
+  ],
   module: {
     rules: [
       {
