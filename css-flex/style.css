@@ -18,7 +18,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end ;
   }
   
   .box{
@@ -27,9 +27,9 @@
     text-align : center;
     text-shadow : 4px 4px 0 rgba(0,0,0,0.1);
     padding: 10px;
-    margin: 5px;
+    width: 30.39vw;
   }
-  .box3{
+  /* .box3{
     font-size: 30px;
   }
 
@@ -42,4 +42,4 @@
   }
   .box5{
     font-size: 5px;
-  }
+  } */
