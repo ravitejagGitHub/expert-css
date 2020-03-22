@@ -1,12 +1,14 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 const isDevelopment = true;
-const template = `./src/navigation/index.html`;
+const folder = "single-line-form";
+const template = `./src/${folder}/index.html`;
 
 module.exports = {
   watch: true,
+  entry: [`./src/${folder}`],
   module: {
     rules: [
       {
