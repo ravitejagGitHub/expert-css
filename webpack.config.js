@@ -6,6 +6,7 @@ const isDevelopment = true;
 const template = `./src/navigation/index.html`;
 
 module.exports = {
+  watch: true,
   module: {
     rules: [
       {
