@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>css - position</title>
+</head>
+
+<body>
+    <div class="parent static">
+        Static : default position , followed other dom elements flow
+        <div class="child child1"> <label>Child 1</label></div>
+        <div class="child child2"> <label>Child 2</label></div>
+        <div class="child child3"> <label>Child 3</label></div>
+    </div>
+
+    <div class="parent relative">
+        realtive : same as static but we can force top, bottom etc. and with in DOM.
+        <div class="child child1"> <label>Child 1</label></div>
+        <div class="child child2"> <label>Child 2</label></div>
+        <div class="child child3"> <label>Child 3</label></div>
+    </div>
+
+    <div class="parent abosulte">
+        realtive : same as relative but came out of the DOM, postion w.r.t window.<br/>
+        if parent element is other than static, postion w.r.t parent
+        <div class="child child1"> <label>Child 1</label></div>
+        <div class="child child2"> <label>Child 2</label></div>
+        <div class="child child3"> <label>Child 3</label></div>
+    </div>
+
+    <div class="parent fixed">
+        fixed : same as abosulte and fixed to window.<br/>
+        <div class="child child1"> <label>Child 1</label></div>
+        <div class="child child2"> <label>Child 2</label></div>
+        <div class="child child3"> <label>Child 3</label></div>
+    </div>
+
+    <div class="parent sticky">
+        sticky : same as fixed when scroll start and w.r.t div.<br/>
+        <div class="child child1"> <label>Child 1</label></div>
+        <div class="child child2"> <label>Child 2</label></div>
+        <div class="child child3"> <label>Child 3</label></div>
+    </div>
+</body>
+
+</html>

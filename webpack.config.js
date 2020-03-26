@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 const isDevelopment = true;
-const folder = "single-line-form";
+const folder = "positions";
+//const folder = "mobile-layout";
+//const folder = "single-line-form";
 //const folder = "navigation";
 const template = `./src/${folder}/index.html`;
 

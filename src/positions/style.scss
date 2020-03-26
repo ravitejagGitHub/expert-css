@@ -1,0 +1,123 @@
+body * {
+  padding: 2px;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  background: #1a8cea;
+  border: 2px solid #000;
+  font-size: 26px;
+  text-align: center;
+  > * {
+    border: 1px solid #fff;
+    flex: 1;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .child1 {
+    background-color: #07a858;
+  }
+  .child2 {
+    background-color: #a88b07;
+  }
+
+  .child3 {
+    background-color: #7e096e;
+  }
+
+  &.relative {
+    margin-top: 10px;
+
+    .child1 {
+      position: relative;
+      left: 20px;
+    }
+
+    .child2 {
+      position: relative;
+    }
+
+    .child3 {
+      position: relative;
+      right: 20px;
+    }
+  }
+
+  &.abosulte {
+    margin-top: 10px;
+    position: relative;
+
+    .child1 {
+      position: absolute;
+      top: 20px;
+    }
+
+    .child2 {
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .child3 {
+      position: absolute;
+      right: 50%;
+      top: 50%;
+    }
+  }
+
+  &.fixed {
+    margin-top: 10px;
+    position: relative;
+    z-index: 999;
+    > * {
+      background-color: rgb(123, 15, 150);
+    }
+
+    .child1 {
+      position: fixed;
+      right: 10px;
+      top: 0;
+    }
+
+    .child2 {
+      position: fixed;
+      bottom: 50%;
+      right: 10px;
+    }
+
+    .child3 {
+      position: fixed;
+      bottom: 0px;
+      right: 10px;
+    }
+  }
+
+  &.sticky {
+    margin-top: 10px;
+    position: relative;
+    right: 10px;
+    > * {
+      background-color: rgb(180, 10, 10);
+    }
+
+    .child1 {
+      position: sticky;
+      left: 10px;
+      top: 20px;
+    }
+
+    .child2 {
+      position: sticky;
+      bottom: 10%;
+      left: 10px;
+    }
+
+    .child3 {
+      position: sticky;
+      bottom: 0px;
+      left: 10px;
+    }
+  }
+}
